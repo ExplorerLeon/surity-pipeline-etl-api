@@ -1,0 +1,8 @@
+{"timestamp": "2023-09-27 13:04:41", "logs": "Loading these files locally: ['/Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_e/Book.xlsm', '/Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_e/Panthers Financial Model Oct-22.xlsm', '/Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_e/not_book.xlsm']"}
+{"timestamp": "2023-09-27 13:04:58", "logs": "Transformed data to df with shape: (6, 6)"}
+{"timestamp": "2023-09-27 13:06:16", "logs": "DF to local: /Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_l/book.parquet"}
+{"timestamp": "2023-09-27 13:06:42", "logs": "DF to local: (6, 6)"}
+{"timestamp": "2023-09-27 13:08:09", "logs": "DF to GS: gs//surety-data-models/output/book.parquet"}
+{"timestamp": "2023-09-27 13:09:58", "logs": "Wrote to BQ successfully: assetinsure-surety-data-models.ls_panthers_test.book"}
+{"timestamp": "2023-09-27 13:11:35", "logs": "PIPELINE RAN SUCCESSFULLY - DELETE TEMP FILES IN DIRS /Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_e and /Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_l: "}
+{"timestamp": "2023-09-27 13:12:08", "logs": "PIPELINE END"}
