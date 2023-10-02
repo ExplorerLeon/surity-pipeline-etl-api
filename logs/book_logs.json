@@ -10,3 +10,21 @@
 {"timestamp": "2023-09-27 15:47:37", "logs": "Transformed data to df with shape: (298, 262)"}
 {"timestamp": "2023-09-27 15:48:29", "logs": "Loading these files locally: ['/Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_e/Book.xlsm', '/Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_e/Panthers Financial Model Oct-22.xlsm', '/Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_e/not_book.xlsm']"}
 {"timestamp": "2023-09-27 15:48:30", "logs": "Transformed data to df with shape: (298, 262)"}
+{"timestamp": "2023-10-02 11:18:20", "logs": "Loading these files locally: ['/Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_e/Book.xlsm', '/Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_e/Panthers Financial Model Oct-22.xlsm', '/Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_e/not_book.xlsm']"}
+{"timestamp": "2023-10-02 11:18:21", "logs": "Transformed data to df with shape: (298, 262)"}
+{"timestamp": "2023-10-02 11:22:52", "logs": "Loading these files locally: ['/Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_e/Book.xlsm', '/Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_e/not_book.xlsm']"}
+{"timestamp": "2023-10-02 11:22:52", "logs": "Transformed data to df with shape: (6, 6)"}
+{"timestamp": "2023-10-02 11:22:52", "logs": "DF to local: /Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_l/book.parquet"}
+{"timestamp": "2023-10-02 11:23:20", "logs": "Loading these files locally: ['/Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_e/Book.xlsm', '/Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_e/not_book.xlsm']"}
+{"timestamp": "2023-10-02 11:23:20", "logs": "Transformed data to df with shape: (6, 6)"}
+{"timestamp": "2023-10-02 11:23:20", "logs": "DF to local: /Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_l/book.parquet"}
+{"timestamp": "2023-10-02 11:43:35", "logs": "Loading these files locally: ['/Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_e/Book.xlsm', '/Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_e/not_book.xlsm']"}
+{"timestamp": "2023-10-02 11:43:35", "logs": "Transformed data to df with shape: (6, 6)"}
+{"timestamp": "2023-10-02 11:43:35", "logs": "DF to local: /Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_l/book.parquet"}
+{"timestamp": "2023-10-02 11:46:05", "logs": "Loading these files locally: ['/Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_e/Book.xlsm', '/Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_e/not_book.xlsm']"}
+{"timestamp": "2023-10-02 11:46:05", "logs": "Transformed data to df with shape: (6, 6)"}
+{"timestamp": "2023-10-02 11:46:05", "logs": "DF to local: /Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_l/book.parquet"}
+{"timestamp": "2023-10-02 11:46:05", "logs": "DF to GS: gs//surety-data-models/output/book.parquet"}
+{"timestamp": "2023-10-02 11:46:09", "logs": "Wrote to BQ successfully: assetinsure-surety-data-models.ls_panthers_test.book"}
+{"timestamp": "2023-10-02 11:46:09", "logs": "PIPELINE RAN SUCCESSFULLY - DELETE TEMP FILES IN DIRS /Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_e and /Users/leonsmith/explore/fs/assetinsure/surity_pipeline/surity-pipeline-etl-api/temp_l: "}
+{"timestamp": "2023-10-02 11:46:09", "logs": "PIPELINE END"}

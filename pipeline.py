@@ -83,12 +83,12 @@ def main():
     pipeline_log(logs_dir, f"DF to local: {temp_l_dir}/{TABLE_NAME}.parquet", TABLE_NAME)
 
     # Upload to GS Bucket transformed parquet data
-    upload_blob(BUCKET, f"{temp_l_dir}/{TABLE_NAME}.parquet", f"{GCS_OUTPUT}/{TABLE_NAME}.parquet")
+    upload_blob(storage_client_inst, BUCKET, f"{temp_l_dir}/{TABLE_NAME}.parquet", f"{GCS_OUTPUT}/{TABLE_NAME}.parquet")
     # Log step
     pipeline_log(logs_dir, f"DF to GS: gs//{BUCKET}/{GCS_OUTPUT}/{TABLE_NAME}.parquet", TABLE_NAME)
 
     # Load parquet data from GS to Big Querty table
-    load_parquet_to_bigquery(PROJECT_ID, BUCKET, GCS_OUTPUT, DATASET, TABLE_NAME)
+    load_parquet_to_bigquery(bigquery_client_inst, PROJECT_ID, BUCKET, GCS_OUTPUT, DATASET, TABLE_NAME)
     # Log step
     pipeline_log(logs_dir, f"Wrote to BQ successfully: {PROJECT_ID}.{DATASET}.{TABLE_NAME}", TABLE_NAME)
 
@@ -114,7 +114,7 @@ def pipeline_log(logs_dir, message, table_name):
         f.write("\n")
 
 # Download files from GS bucket
-def download_all_blobs(storage_client, bucket_name, destination_directory, source_blob_prefix="", file_pattern=".*\.xlsm"):
+def download_all_blobs(storage_client, bucket_name, destination_directory, source_blob_prefix="", file_pattern=".*ook\.xlsm"):
     """
     Downloads all blobs from the bucket and saves them with their original file names.
     """
@@ -215,7 +215,7 @@ def upload_blob(storage_client, bucket_name, source_file_name, destination_blob_
     # generation-match precondition using its generation number.
 
     # TODO: set the version in json config - to ovewrite pass None
-    generation_match_precondition = 0
+    generation_match_precondition = None
 
     blob.upload_from_filename(source_file_name, if_generation_match=generation_match_precondition)
 
